@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main  widget1"
+    "sidebar main  widget2"
+    "footer footer footer";
+
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 80px 1fr 1fr 60px;
+
+    gap: 15px;
+    min-height: 600px;
+}
+
+header {
+    background-color: plum;
+    grid-area: header;
+}
+
+aside {
+    background-color: plum;
+    grid-area: aside;
+}
+
+main {
+    background-color: plum;
+    grid-area: main;
+}
+
+#widget1 {
+    background-color: plum;
+    grid-area: widget1;
+    height: 200px;
+}
+
+#widget2 {
+    background-color: plum;
+    grid-area: widget2;
+    height: 200px;
+}
+
+footer {
+    background-color: plum;
+    grid-area: footer;
+}
